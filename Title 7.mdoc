@@ -1,0 +1,20 @@
+Examine each of the options below and select the correct answer.
+
+{% choice %}
+{% question %}
+Why does the Synchronizer Token Pattern (Anti-CSRF Token) effectively prevent CSRF attacks?
+{% /question %}
+{% option %}
+It encrypts the entire form submission, preventing an attacker from seeing the data.
+{% /option %}
+{% option %}
+It ensures the request is sent via POST, which attackers cannot forge from an external site.
+{% /option %}
+{% option answer=true %}
+The attacker's malicious site cannot guess the unique, secret token required to be submitted along with the forged request.
+{% /option %}
+{% option %}
+It validates that the request is coming from the same IP address as the user who initiated the session.
+{% /option %}
+{% /choice %}
+

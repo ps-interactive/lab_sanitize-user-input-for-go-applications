@@ -1,0 +1,19 @@
+Examine each of the options below and select the correct answer.
+
+{% choice %}
+{% question %}
+A user is logged into their project management tool. They receive an email with a link to an e-card, and after clicking it, they discover a critical project was deleted without their consent. What attack is the most probable cause?
+{% /question %}
+{% option %}
+SQL Injection that bypassed the application's authentication.
+{% /option %}
+{% option %}
+A Stored XSS payload that was already on the project dashboard.
+{% /option %}
+{% option answer=true %}
+A Cross-Site Request Forgery (CSRF) attack where the e-card page forged a "delete project" request.
+{% /option %}
+{% option %}
+A session fixation attack where the attacker stole the user's session cookie.
+{% /option %}
+{% /choice %}

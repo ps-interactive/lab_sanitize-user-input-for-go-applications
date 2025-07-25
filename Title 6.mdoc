@@ -1,0 +1,19 @@
+Examine each of the options below and select the correct answer.
+
+{% choice %}
+{% question %}
+After a user posts a comment on a blog, every subsequent visitor to that page finds their session cookie has been sent to a third-party server. What type of attack most likely caused this?
+{% /question %}
+{% option %}
+A Reflected XSS attack embedded in the page's URL.
+{% /option %}
+{% option %}
+A DOM-based XSS vulnerability within the browser's client-side code.
+{% /option %}
+{% option %}
+A Cross-Site Request Forgery (CSRF) attack tricking the browser.
+{% /option %}
+{% option answer=true %}
+A Stored XSS attack where a malicious script was saved as a comment in the database.
+{% /option %}
+{% /choice %}

@@ -1,0 +1,19 @@
+Examine each of the options below and select the correct answer.
+
+{% choice %}
+{% question %}
+What is the most direct effect of a context-aware templating engine, like Go's html/template, when it renders the user-submitted string <script>document.location='http://evil.com'</script>?
+{% /question %}
+{% option %}
+It deletes the script from the database to prevent it from being stored.
+{% /option %}
+{% option %}
+It sends a Content-Security-Policy header to block the script from executing in the browser.
+{% /option %}
+{% option answer=true %}
+It converts the string to &lt;script&gt;document.location='http://evil.com'&lt;/script&gt;, causing the browser to display it as harmless text.
+{% /option %}
+{% option %}
+It detects the malicious payload and returns an error page instead of rendering the content.
+{% /option %}
+{% /choice %}

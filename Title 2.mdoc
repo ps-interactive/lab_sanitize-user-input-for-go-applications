@@ -1,0 +1,19 @@
+Examine each of the options below and select the correct answer.
+
+{% choice %}
+{% question %}
+An attacker is using a Time-based Blind SQLi attack to exfiltrate data. What is the primary feedback mechanism the attacker relies on to determine if their injected query condition is true or false?
+{% /question %}
+{% option %}
+Analyzing the structure of error messages returned by the database.
+{% /option %}
+{% option %}
+Observing whether the web page content changes slightly between two different responses.
+{% /option %}
+{% option answer=true %}
+Measuring the server's response delay, which is artificially introduced by a command like SLEEP() or WAITFOR.
+{% /option %}
+{% option %}
+Forcing the database to make an out-of-band DNS request to a server they control.
+{% /option %}
+{% /choice %}

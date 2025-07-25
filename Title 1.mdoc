@@ -1,0 +1,19 @@
+Examine each of the options below and select the correct answer.
+
+{% choice %}
+{% question %}
+In a secure application using parameterized queries, what happens when the input admin' OR '1'='1' -- is submitted to a login form?
+{% /question %}
+{% option %}
+The database server rejects the query entirely because it contains SQL syntax characters.
+{% /option %}
+{% option answer=true %}
+The application searches for a user with the literal username admin' OR '1'='1' --, which fails because the input is treated as data, not code.
+{% /option %}
+{% option %}
+The query is executed, but the -- comment character is stripped, causing a syntax error.
+{% /option %}
+{% option %}
+The application is granted access as the first user in the database because the OR '1'='1' condition is still evaluated as true.
+{% /option %}
+{% /choice %}

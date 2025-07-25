@@ -1,0 +1,19 @@
+Examine each of the options below and select the correct answer.
+
+{% choice %}
+{% question %}
+What characteristic makes Stored XSS significantly more dangerous than Reflected XSS in most scenarios?
+{% /question %}
+{% option %}
+Stored XSS payloads are more complex and can execute a wider range of malicious actions.
+{% /option %}
+{% option answer=true %}
+The malicious script is persisted on the server, automatically attacking every user who views the compromised page without requiring individual trickery.
+{% /option %}
+{% option %}
+Stored XSS attacks cannot be detected by web application firewalls, whereas Reflected XSS can.
+{% /option %}
+{% option %}
+The script in a Stored XSS attack runs with elevated server-level privileges.
+{% /option %}
+{% /choice %}

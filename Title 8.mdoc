@@ -1,0 +1,19 @@
+Examine each of the options below and select the correct answer.
+
+{% choice %}
+{% question %}
+A web application's "Change Email" function is triggered by a simple POST request containing only the new email address. Why is this design vulnerable even if the user is authenticated?
+{% /question %}
+{% option answer=true %}
+An attacker's website can make a user's browser submit this request, which will be accepted because it automatically includes the user's session cookie.
+{% /option %}
+{% option %}
+The new email address field is likely vulnerable to SQL injection if not properly sanitized.
+{% /option %}
+{% option %}
+A simple POST request can be intercepted and modified by a man-in-the-middle attacker.
+{% /option %}
+{% option %}
+The function is vulnerable to XSS if the new email is displayed on the page without output encoding.
+{% /option %}
+{% /choice %}

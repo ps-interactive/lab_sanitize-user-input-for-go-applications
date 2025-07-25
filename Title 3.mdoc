@@ -1,0 +1,19 @@
+Examine each of the options below and select the correct answer.
+
+{% choice %}
+{% question %}
+A developer builds a feature to look up employee details by ID using fmt.Sprintf("SELECT * FROM employees WHERE id = %s", employeeId). Why does this approach create a critical security risk?
+{% /question %}
+{% option %}
+It is inefficient and can cause slow database performance under heavy load.
+{% /option %}
+{% option %}
+It prevents the use of database indexes, making searches less effective.
+{% /option %}
+{% option answer=true %}
+It allows an attacker to alter the query's logic by injecting SQL commands directly into the employeeId parameter.
+{% /option %}
+{% option %}
+It can leak memory because fmt.Sprintf does not properly manage string allocation for database queries.
+{% /option %}
+{% /choice %}
