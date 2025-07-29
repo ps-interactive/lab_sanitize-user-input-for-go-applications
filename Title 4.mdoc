@@ -11,7 +11,7 @@ It deletes the script from the database to prevent it from being stored.
 It sends a Content-Security-Policy header to block the script from executing in the browser.
 {% /option %}
 {% option answer=true %}
-It converts the string to &lt;script&gt;document.location='http://evil.com'&lt;/script&gt;, causing the browser to display it as harmless text.
+It escapes the string, causing the browser to display it as harmless text.
 {% /option %}
 {% option %}
 It detects the malicious payload and returns an error page instead of rendering the content.
